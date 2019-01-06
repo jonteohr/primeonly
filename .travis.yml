@@ -10,7 +10,7 @@ env:
     - SCRIPTING=addons/sourcemod/scripting/
     - PLUGINS=addons/sourcemod/plugins/
   matrix:
-    - SOURCEMOD=1.8
+    - SOURCEMOD=1.9
 
 before_install:
   - mkdir build-env
