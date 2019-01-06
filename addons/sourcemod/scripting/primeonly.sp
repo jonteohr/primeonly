@@ -18,7 +18,7 @@ ConVar gc_sWarnMessage;
 
 public Plugin myinfo = 
 {
-	name = "[Trinityplay] Prime Only",
+	name = "[CS:GO] Prime Only",
 	author = "Hypr",
 	description = "Checks client info and makes sure only accounts with Prime-status can join",
 	version = PLUGIN_VERSION,
