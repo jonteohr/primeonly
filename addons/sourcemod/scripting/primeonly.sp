@@ -51,9 +51,9 @@ public void OnClientPostAdminCheck(int client) {
 		
 		if(sBypassFlag != "") {
 			if((GetUserFlagBits(client) & ReadFlagString(sBypassFlag) == ReadFlagString(sBypassFlag))) // TODO: Make sure client is valid, or else errors might print.
-			return;
+				return;
 			else
-			KickClient(client, "You need a Prime-status to play on this server!");
+				KickClient(client, "You need a Prime-status to play on this server!");
 		} else {
 			KickClient(client, "You need a Prime-status to play on this server!");
 			return;
