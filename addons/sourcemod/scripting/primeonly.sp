@@ -85,10 +85,10 @@ public void SetTags() {
 	GetConVarString(gc_sTags, sTags, sizeof(sTags));
 	
 	if(StrContains(sTags, SERVERTAG, false) == -1) {
-		char murderTag[64];
-		Format(murderTag, sizeof(murderTag), ", %s", SERVERTAG);
+		char primeTag[255];
+		Format(primeTag, sizeof(primeTag), ", %s", SERVERTAG);
 		
-		StrCat(sTags, sizeof(sTags), murderTag);
+		StrCat(sTags, sizeof(sTags), primeTag);
 		SetConVarString(gc_sTags, sTags);
 	}
 }
